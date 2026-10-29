@@ -92,7 +92,7 @@ public class Config {
 
     public static Config vod() {
         Config item = AppDatabase.get().getConfigDao().findOne(0);
-        return item == null ? create(0) : item;
+        return item == null ? create(0, "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/多仓订阅.json", "聚合多仓") : item;
     }
 
     public static Config live() {
